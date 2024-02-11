@@ -9,33 +9,6 @@ import About from '@/components/About/About';
 import Explore from '@/components/Explore /Explore';
 
 const ITEMS_PER_PAGE = 2;
-
-const CatDataPage = ({ catData =[] }) => {
-  // Settings for the slider
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4, // Adjust as needed
-    slidesToScroll: 1,
-  };
-  console.log('catData:', catData);
-
-  return (
-    
-      <div>
-          <Navbar/>
-    <Explore/>
-      <Slider {...sliderSettings} >
-        {catData?.map((cat, index) => (
-            <CatData key={index} catData={[cat]} />
-            ))}
-      </Slider>
-    </div>
-            
-  );
-};
-
 export const getServerSideProps = async () => {
   try {
     const response = await fetch(`https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=${ITEMS_PER_PAGE}`);
@@ -62,5 +35,32 @@ export const getServerSideProps = async () => {
     };
   }
 };
+const CatDataPage = ({ catData =[] }) => {
+  // Settings for the slider
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4, // Adjust as needed
+    slidesToScroll: 1,
+  };
+  console.log('catData:', catData);
+
+  return (
+    
+      <div>
+          <Navbar/>
+    <Explore/>
+      <Slider {...sliderSettings} >
+        {catData?.map((cat, index) => (
+            <CatData key={index} catData={[cat]} />
+            ))}
+      </Slider>
+    </div>
+            
+  );
+};
+
+
 
 export default CatDataPage;
