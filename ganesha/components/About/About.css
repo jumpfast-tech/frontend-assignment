@@ -1,0 +1,170 @@
+/* components/AboutPage.module.css */
+
+.about-container {
+  position: relative;
+  background-color: #2c3e50; /* Dark color for the top part */
+  height: 15vh;
+  overflow: hidden;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+
+    50% 87%,
+
+    0% 100%
+  ); /* Inverted semi-circle clip-path */
+  /* Original semi-circle clip-path */
+  /* Add a semi-circle to the clip-path */
+}
+
+.curve-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  top: 40px;
+  right: 0;
+  height: 50px; /* Adjust the height of the curve as needed */
+  background-color: #2c3e50; /* Match the background color of the top part */
+}
+
+.sections-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 100%;
+}
+
+.section {
+  flex: 1;
+  /* margin: 30px; */
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Henny Penny", system-ui;
+}
+
+.section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  /* margin-left: 100px; */
+  height: 70%;
+  width: 1px;
+  background-color: #fff; /* Line color between sections */
+  transform: translateY(-50%);
+}
+.work-with-me {
+  text-align: center;
+  color: #000; /* Black color for the text */
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-family: "Dancing Script", cursive;
+  margin-top: 20px; /* Adjust the margin from the curved container */
+}
+.big-box {
+  text-align: center;
+  background-color: #fde5e5; /* Light pink background color */
+  color: #000; /* Black text color */
+  width: 70%;
+  height: 20vh;
+  margin: 20px auto; /* Center the box on the page */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 60vw; */
+  height: 40vh;
+}
+
+.left-section,
+.center-section {
+  /* flex: 1.5; */
+  padding: 10px;
+  /* padding-right: 100px; */
+  margin: 20px;
+  width: 30%;
+}
+.left-section {
+  margin-left: 260px;
+}
+.right-section {
+  /* flex: 1; */
+  width: 15%;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.section-paragraph,
+.right-section-content {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.section-button,
+.contact-button {
+  padding: 10px 20px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.section-button:hover,
+.contact-button:hover {
+  background-color: #2980b9;
+}
+
+.button-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+.image-box {
+  margin-top: 40px;
+  width: 60%;
+  height: 45vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.centered-image {
+  width: 100%;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
