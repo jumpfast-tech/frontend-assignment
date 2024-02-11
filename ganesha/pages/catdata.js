@@ -10,7 +10,7 @@ import Explore from '@/components/Explore /Explore';
 
 const ITEMS_PER_PAGE = 2;
 
-const CatDataPage = ({ catData = [] }) => {
+const CatDataPage = ({ catData  }) => {
   // Settings for the slider
   const sliderSettings = {
     dots: true,
