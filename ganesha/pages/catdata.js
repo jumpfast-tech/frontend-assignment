@@ -27,7 +27,7 @@ const CatDataPage = ({ catData }) => {
           <Navbar/>
     <Explore/>
       <Slider {...sliderSettings} >
-        {catData?.map((cat, index) => (
+        {catData.map((cat, index) => (
             <CatData key={index} catData={[cat]} />
             ))}
       </Slider>
@@ -42,7 +42,7 @@ export const getServerSideProps = async () => {
     const data = await response.json();
 
     
-    const catData = data?.map((cat) => ({
+    const catData = data.map((cat) => ({
         id: cat.id,
       imageUrl: cat?.url || 'fallbackImageUrl',
      
