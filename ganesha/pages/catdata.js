@@ -52,7 +52,7 @@ const CatDataPage = ({ catData =[] }) => {
           <Navbar/>
     <Explore/>
       <Slider {...sliderSettings} >
-        {catData?.map((cat, index) => (
+        {catData.map((cat, index) => (
             <CatData key={index} catData={[cat]} />
             ))}
       </Slider>
