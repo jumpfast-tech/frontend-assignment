@@ -40,7 +40,6 @@ const Index = () => {
       </Typography>
       {catData && (
         <div>
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={catData.url}
             alt="Random Cat"
