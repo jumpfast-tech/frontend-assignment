@@ -99,7 +99,7 @@ export const getServerSideProps = async () => {
   }
 };
 
-const CatDataPage = ({ catData }) => {
+const CatDataPage = ({ catData =[] }) => {
   const [loadedCatData, setLoadedCatData] = useState(catData);
 
   useEffect(() => {
