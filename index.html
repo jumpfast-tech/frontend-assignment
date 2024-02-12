@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100%;
+        margin-top: 10px;
+      }
+      .jumbotron {
+        float: left;
+        width: 50%;
+        height: 63%;
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+      .jumbotron img {
+        max-width: 100%;
+        border-radius: 15px;
+        height: 100%;
+      }
+      .tiles-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tiles-container .tile {
+        width: 45%;
+      }
+      .tiles-container .tile img {
+        max-width: 100%;
+        border-radius: 15px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <img src="images/jumbotron_768.jpg" alt="picture of restaurant" />
+      </div>
+      <div class="tiles-container">
+        <div class="tile col-md-4 col-sm-6 col-xs-12">
+          <img src="images/specials-tile.jpg" />
+        </div>
+        <div class="tile col-md-4 col-sm-6 col-xs-12">
+          <img src="images/menu-tile.jpg" />
+        </div>
+      </div>
+      <div class="tiles-container">
+        <div class="tile col-md-4 col-sm-6 col-xs-12">
+          <img src="images/specials-tile.jpg" />
+        </div>
+        <div class="tile col-md-4 col-sm-6 col-xs-12">
+          <img src="images/menu-tile.jpg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
