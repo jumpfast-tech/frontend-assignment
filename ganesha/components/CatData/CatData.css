@@ -60,3 +60,14 @@
 .catCard {
   animation: fadeIn 0.5s ease-out;
 }
+@media only screen and (max-width: 768px) {
+  .catImage {
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .catCardContainer {
+    width: 351px;
+    height: 86vh;
+  }
+}

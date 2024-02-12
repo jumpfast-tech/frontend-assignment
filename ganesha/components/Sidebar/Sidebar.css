@@ -59,7 +59,7 @@
   box-sizing: border-box;
   padding: 8px;
 }
-.contact-button {
+.download-button {
   padding: 10px 20px;
   position: absolute;
   margin-top: 90px;
@@ -73,4 +73,15 @@
   font-size: 1rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .cat-sidebar.open {
+    width: 225px;
+    z-index: 200;
+  }
+  .download-button {
+    padding: 4px 8px;
+
+    margin-left: 122px;
+  }
 }

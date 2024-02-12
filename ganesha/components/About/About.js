@@ -32,7 +32,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex-container">
-        <div className="left-section">
+        <div className="left-section1">
           <h2 className="section-title">Your Section Title</h2>
           <p className="section-paragraph">
             Your paragraph content goes here. It can include details or information
@@ -42,7 +42,7 @@ const About = () => {
           <Link href='/catdata' className="section-button">Explore</Link>
           <div className="button-line"></div>
         </div>
-        <div className="center-section">
+        <div className="center-section1">
           <div className="image-box">
             <img
               src="/long-ma-hxEAE88Onv0-unsplash.jpg"  
@@ -51,7 +51,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="right-section">
+        <div className="right-section1">
          
           <button className="contact-button">Contact Us</button>
         </div>

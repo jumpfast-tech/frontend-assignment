@@ -99,18 +99,18 @@
   height: 40vh;
 }
 
-.left-section,
-.center-section {
+.left-section1,
+.center-section1 {
   /* flex: 1.5; */
   padding: 10px;
   /* padding-right: 100px; */
   margin: 20px;
   width: 30%;
 }
-.left-section {
+.left-section1 {
   margin-left: 260px;
 }
-.right-section {
+.right-section1 {
   /* flex: 1; */
   width: 15%;
 }
@@ -167,4 +167,89 @@
   width: 100%;
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  /* Apply styles only when the screen width is 768 pixels or less (typical tablet width) */
+  .sections-container {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+  .big-box {
+    height: 6vh;
+  }
+  .section {
+    width: 100%;
+  }
+  .right-section1 {
+    width: 50%;
+    margin-left: 18px;
+  }
+
+  .left-section1 {
+    margin-left: 0; /* Remove margin for smaller screens */
+  }
+  .paragraph,
+  .section-paragraph {
+    display: none;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 29vh;
+  }
+  .section-button {
+    margin-left: 80px;
+  }
+  .image-box {
+    width: 100%; /* Make image box full width on smaller screens */
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+  .section-title {
+    font-size: 15px !important;
+    display: none;
+  }
+  .center-section1 {
+    width: 60%;
+    margin: 1px !important;
+    padding: 1px !important;
+  }
+  .contact-button {
+    margin-left: 140px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .paragraph,
+  .section-paragraph {
+    display: none;
+  }
+  .left-section1 {
+    margin-left: 1px;
+  }
+  .section-title,
+  .contact-button {
+    display: none;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .section-button {
+    margin-left: 20px;
+  }
+  .center-section1 {
+    /* flex: 1.5; */
+    padding: 1px;
+    padding-right: 1px;
+    margin: 1px;
+    width: 60%;
+    margin-left: 0;
+  }
+  .button-line {
+    display: none;
+  }
+
+  .image-box {
+    width: 100%;
+    margin-top: 0;
+  }
 }

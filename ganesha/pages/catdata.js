@@ -106,6 +106,20 @@ const CatDataPage = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // adjust based on your design needs
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 900, // adjust based on your design needs
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   };
 
   return (

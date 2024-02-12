@@ -19,8 +19,8 @@ const Explore = () => {
 
         {/* Right section with title, paragraph, and button */}
         <div className="right-section">
-          <h2 className="section-title">Meet Our Friends</h2>
-          <p className="section-paragraph">
+          <h2 className="section-title1">Meet Our Friends</h2>
+          <p className="section-paragraph1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <Link href='/' className="go-back-button">Go Back</Link>

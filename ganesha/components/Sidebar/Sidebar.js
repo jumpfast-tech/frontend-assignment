@@ -27,7 +27,7 @@ const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
      
       
 
-      <button  className = "contact-button"onClick={() => toPDF()}>Download PDF</button>
+      <button  className = "download-button"onClick={() => toPDF()}>Download PDF</button>
       <img className="cat-image" src={imageUrl} alt={catDetails.name} />
       <div className="cat-name">{catDetails.name}</div>
     

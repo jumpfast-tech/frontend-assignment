@@ -81,3 +81,14 @@
 .darkText1 {
   color: #916666; /* Dark color for specific words */
 }
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .rightSection {
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .rightSection {
+    height: 21vh;
+  }
+}

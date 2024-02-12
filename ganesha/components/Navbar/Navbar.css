@@ -48,3 +48,19 @@
 .nav-item a:hover {
   color: #5e6060;
 }
+@media only screen and (max-width: 900px) {
+  /* Apply styles only when the screen width is 600 pixels or less (typical mobile width) */
+  .navbar {
+    padding: 10px;
+    display: flex;
+  }
+
+  .nav-list {
+    margin-right: 613px;
+
+    gap: 4px;
+  }
+  .nav-item a {
+    font-size: 20px;
+  }
+}
