@@ -74,33 +74,8 @@ import Explore from '@/components/Explore /Explore';
 
 const ITEMS_PER_PAGE = 2;
 
-export const getServerSideProps = async () => {
-  try {
-    const response = await fetch(`https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=${ITEMS_PER_PAGE}`);
-    const data = await response.json();
-
-    const catData = data?.map((cat) => ({
-      id: cat.id,
-      imageUrl: cat?.url || 'fallbackImageUrl',
-    }));
-
-    return {
-      props: {
-        catData,
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching cat data:', error);
-    return {
-      props: {
-        catData: [],
-      },
-    };
-  }
-};
-
-const CatDataPage = ({ catData = [] }) => {
-  const [loadedCatData, setLoadedCatData] = useState(catData);
+const CatDataPage = () => {
+  const [loadedCatData, setLoadedCatData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -108,21 +83,22 @@ const CatDataPage = ({ catData = [] }) => {
         const response = await fetch(`https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=${ITEMS_PER_PAGE}`);
         const data = await response.json();
 
-        const updatedCatData = data?.map((cat) => ({
-          id: cat.id,
-          imageUrl: cat?.url || 'fallbackImageUrl',
-        }));
+        setLoadedCatData((prevData) => {
+          const updatedCatData = data?.map((cat) => ({
+            id: cat.id,
+            imageUrl: cat?.url || 'fallbackImageUrl',
+          }));
 
-        setLoadedCatData(updatedCatData);
+          return [...prevData, ...updatedCatData];
+        });
       } catch (error) {
         console.error('Error fetching cat data:', error);
       }
     };
 
-    if (!catData.length) {
-      fetchData();
-    }
-  }, [catData]);
+    // Initial fetch
+    fetchData();
+  }, []); // Empty dependency array to mimic componentDidMount
 
   const sliderSettings = {
     dots: true,
@@ -137,7 +113,7 @@ const CatDataPage = ({ catData = [] }) => {
       <Navbar />
       <Explore />
       <Slider {...sliderSettings}>
-        {loadedCatData?.map((cat, index) => (
+        {loadedCatData.map((cat, index) => (
           <CatData key={index} catData={[cat]} />
         ))}
       </Slider>
