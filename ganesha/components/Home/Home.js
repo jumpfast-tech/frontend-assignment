@@ -1,6 +1,6 @@
 
 import React from 'react';
-import styles from './Home.css'; // Use CSS Modules
+import './Home.css';
 import Navbar from '../Navbar/Navbar';
 import Link from 'next/link';
 const Home = () => {
@@ -12,14 +12,15 @@ const Home = () => {
         <div className="leftSection">
           <div className="attractiveLines" style={{ fontSize: "30px" }}> 
           <span className="lightText">Meet </span>
-  <span className="darkText"> Our </span>
-  <span className="lightText"> Furry Friends! </span> 
+         <span className="darkText"> Our </span>
+          <span className="lightText"> Furry Friends! </span> 
  
-  </div>
+         </div>
           <div className="descriptiveLine">
   
-  <span className="darkText1"> Discover and Delight in Our Fabulous Feline Friends!</span>
-</div>          <Link href='/about' className="stylishButton">Purr Click</Link>
+          <span className="darkText1"> Discover and Delight in Our Fabulous Feline Friends!</span>
+        </div>         
+         <Link href='/about' className="stylishButton">Purr Click</Link>
         </div>
         <div className="rightSection">
         

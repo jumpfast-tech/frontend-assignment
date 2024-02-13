@@ -1,8 +1,6 @@
-/* components/Navbar.module.css */
-
 .navbar {
   position: absolute;
-  /* background-color: #3498db; */
+
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -49,7 +47,6 @@
   color: #5e6060;
 }
 @media only screen and (max-width: 900px) {
-  /* Apply styles only when the screen width is 600 pixels or less (typical mobile width) */
   .navbar {
     padding: 10px;
     display: flex;

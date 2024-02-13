@@ -1,4 +1,4 @@
-// components/CatCard.js
+
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import './CatCard.css';
@@ -47,7 +47,7 @@ const CatCard = ({ imageUrl, id }) => {
             Read More
           </button>
         )}
-        {/* <Link href={`/details/${id}`} */}
+        
         <button className="knowMoreButton" onClick={openDialog}>
         Know More
           </button>

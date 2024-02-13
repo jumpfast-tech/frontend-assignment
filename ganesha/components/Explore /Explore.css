@@ -4,7 +4,6 @@
   align-items: center;
   height: 70vh;
   background-color: #ecf0f1;
-  /* background-color: #ffcccc;  */
 }
 
 .center-section {
@@ -13,9 +12,6 @@
   align-items: center;
   width: 60vw;
   height: 70vh;
-  /* background-color: #ecf0f1; */
-  /* padding: 20px; */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .image-section {
@@ -25,7 +21,7 @@
 .square-image {
   height: 50vh;
   width: 100%;
-  border-radius: 8px; /* Add border radius for a rounded image */
+  border-radius: 8px;
 }
 
 .right-section {
@@ -66,7 +62,7 @@
     margin-top: 45px;
     height: 18vh;
     width: 200px;
-    /* margin-right: 7px; */
+
     border-radius: 8px;
   }
   .new-component-container {

@@ -8,16 +8,13 @@ const Explore = () => {
   return (
     <div className="new-component-container">
       <div className="center-section">
-        {/* Square image section */}
         <div className="image-section">
           <img
-            src="/i want it.jpg"  // Placeholder image, replace with your actual image source
+            src="/i want it.jpg"  
             alt="Square Image"
             className="square-image"
           />
         </div>
-
-        {/* Right section with title, paragraph, and button */}
         <div className="right-section">
           <h2 className="section-title1">Whisker Card Haven</h2>
           <p className="section-paragraph1">

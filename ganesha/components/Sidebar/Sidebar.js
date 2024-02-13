@@ -1,4 +1,4 @@
-// CatSidebar.jsx
+
 import React, { useEffect, useRef } from 'react';
 import './Sidebar.css'
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import { useReactToPrint } from 'react-to-print';
 
 const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
 
-    // const targetRef = useRef();
+    
 
     const targetRef = useRef();
  const handlePrint = useReactToPrint({
@@ -37,16 +37,13 @@ const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
       <div className="cat-name">{catDetails.name}</div>
     
       <div className="cat-origin">{catDetails.origin} {catDetails.country_code}</div>
-    {/* <div className="grid-item">Country Code: {catDetails.country_code}</div> */}
     <div className="cat-name">{catDetails.temperament}</div>
       <div className="cat-details-grid">
 
-      {/* <div className="grid-item">Origin: {catDetails.origin}</div> */}
     <div className="grid-item">Weight: {catDetails.weight.imperial}</div>
     <div className="grid-item">Intelligence: {catDetails.intelligence}</div>
     <div className="grid-item">Adaptability: {catDetails.adaptability}</div>
     <div className="grid-item">Affection Level: {catDetails.affection_level}</div>
-    {/* <div className="grid-item">Alt Names: {catDetails.alt_names}</div> */}
     <div className="grid-item">Child Friendly: {catDetails.child_friendly}</div>
     <div className="grid-item">Energy Level: {catDetails.energy_level}</div>
     <div className="grid-item">Experimental: {catDetails.experimental}</div>
@@ -59,7 +56,6 @@ const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
     <div className="grid-item">Life Span: {catDetails.life_span}</div>
     <div className="grid-item">Natural: {catDetails.natural}</div>
     <div className="grid-item">Rare: {catDetails.rare}</div>
-    {/* <div className="grid-item">Reference Image ID: {catDetails.reference_image_id}</div> */}
     <div className="grid-item">Rex: {catDetails.rex}</div>
     <div className="grid-item">Shedding Level: {catDetails.shedding_level}</div>
     <div className="grid-item">Short Legs: {catDetails.short_legs}</div>

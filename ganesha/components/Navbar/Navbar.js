@@ -1,7 +1,7 @@
 // components/Navbar.js
 
 import React from 'react';
-import Link from 'next/link'; // Import Link from Next.js
+import Link from 'next/link'; 
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
         <li className="nav-item"><Link href="/">Home</Link></li>
         <li className="nav-item"><Link href="/about">About</Link></li>
         <li className="nav-item"><Link href="/catdata">Explore</Link></li>
-        <li className="nav-item"><Link href="/catdata">Contact</Link></li>
+        <li className="nav-item"><Link href="/contact">Contact</Link></li>
       </ul>
     </nav>
   );
