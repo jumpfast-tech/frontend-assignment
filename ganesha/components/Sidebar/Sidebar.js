@@ -2,13 +2,18 @@
 import React, { useEffect, useRef } from 'react';
 import './Sidebar.css'
 import Link from 'next/link';
-import { usePDF } from 'react-to-pdf';
+import { useReactToPrint } from 'react-to-print';
 
 const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
 
     // const targetRef = useRef();
 
-    const { toPDF, targetRef } = usePDF({filename: 'cat-details.pdf'});
+    const targetRef = useRef();
+ const handlePrint = useReactToPrint({
+  content: () => targetRef.current,
+  documentTitle: 'Visitor Pass',
+  onAfterPrint: () => console.log('Printed PDF successfully!'),
+ });
     useEffect(() => {
       const handleClickOutside = (event) => {
         if (targetRef.current && !targetRef.current.contains(event.target)) {
@@ -27,7 +32,7 @@ const CatSidebar = ({ catDetails, imageUrl , isOpen, onClose}) => {
      
       
 
-      <button  className = "download-button"onClick={() => toPDF()}>Download PDF</button>
+      <button  className = "download-button"onClick={handlePrint}>Download PDF</button>
       <img className="cat-image" src={imageUrl} alt={catDetails.name} />
       <div className="cat-name">{catDetails.name}</div>
     

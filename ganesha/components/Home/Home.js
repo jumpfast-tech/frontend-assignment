@@ -11,15 +11,15 @@ const Home = () => {
       <div className="homeContainer">
         <div className="leftSection">
           <div className="attractiveLines" style={{ fontSize: "30px" }}> 
-          <span className="lightText">LET'S</span>
-  <span className="darkText"> MEET </span>
-  <span className="lightText">OUR FRIENDS</span> 
+          <span className="lightText">Meet </span>
+  <span className="darkText"> Our </span>
+  <span className="lightText"> Furry Friends! </span> 
  
   </div>
           <div className="descriptiveLine">
   
-  <span className="darkText1"> This  descriptive, informative, and attractive.</span>
-</div>          <Link href='/about' className="stylishButton">Click me</Link>
+  <span className="darkText1"> Discover and Delight in Our Fabulous Feline Friends!</span>
+</div>          <Link href='/about' className="stylishButton">Purr Click</Link>
         </div>
         <div className="rightSection">
         
