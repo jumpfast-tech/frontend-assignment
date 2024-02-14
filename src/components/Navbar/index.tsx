@@ -41,7 +41,11 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="sticky" className={styles.appBar}>
+    <AppBar
+      position="sticky"
+      className={styles.appBar}
+      sx={{ background: "#031a22" }}
+    >
       <Container maxWidth="xl" className={styles.parentContainer}>
         <Toolbar disableGutters>
           <Grid>
