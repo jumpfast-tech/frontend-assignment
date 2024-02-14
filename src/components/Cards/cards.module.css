@@ -1,0 +1,59 @@
+.cardContainer {
+    padding: 20px;
+}
+
+.card {
+    max-width: 345px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardMedia {
+    height: 240px;
+    object-fit: cover;
+}
+
+.cardContentContainer {
+    height: 70px;
+    background: #f5f5f5;
+}
+
+.cardContent {
+    padding: 16px;
+}
+
+.cardActions {
+    background: #f5f5f5;
+}
+
+.cardContainer .readButton {
+    background: #031a22;
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.cardContainer .readButton:hover {
+    background: #031a22;
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.cardContainer .shareButton {
+    color: #4091ad;
+}
+
+.cardContainer .infoButton {
+    color: #4091ad;
+
+}
+
+.circularProgress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 500px;
+    height: 500px;
+}
